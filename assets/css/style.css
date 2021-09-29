@@ -1,5 +1,68 @@
+:root {
+  --primary-color: #fce138;
+  --secondary-color: #024e76;
+  --tertiary-color: #39a6b2;
+  --timing: 265ms;
+  --iconColor: #00B5F5;
+  --accent: #003A8F;
+  --bluefade: #0043E0;
+  --gradient: #00B5F5;
+}
+
+body {
+  backgorund-color: rgba(var(--iconColor), 0.05);
+}
 
 
+/* Social Media Icons */
+
+@mixin transformScale($size:1) {
+  transform: scale($size);
+  -ms-transform: scale($size);
+  -webkit-transform: scale($size);
+}
+
+.social-container {
+  width: 400px;
+  margin: 40vh auto;
+  text-align: center;
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all var(--timing) ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a::before {
+  transform: scale(1.0);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, var(--iconColor), var(--accent));
+  transition: all var(--timing) ease-out;
+}
 
 /* FONT STYLES */
 
