@@ -52,4 +52,4 @@ Version edits and changes can be found in Github commit changes at https://githu
 Made by paperpatch
 
 ## ACKNOWLEDGEMENT
-Thank you UConn Bootcamp
+UConn Bootcamp
