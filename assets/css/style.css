@@ -21,8 +21,20 @@
   color: white;
 }
 
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
+/* LinkedIn */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* GitHub */
+.fa-github {
+  background: #007bb5;
+  color: white;
+}
+
+/* Codepen */
+.fa-codepen {
+  background: #007bb5;
   color: white;
 }
