@@ -1,26 +1,101 @@
 :root {
-  --primary-color: #fce138;
+  --secondary-color: #000000;
   --secondary-color: #024e76;
-  --tertiary-color: #39a6b2;
+  --tertiary-color: #F5FAF9;
   --timing: 265ms;
   --iconColor: #00B5F5;
   --accent: #003A8F;
   --bluefade: #0043E0;
   --gradient: #00B5F5;
+  --scale: 1.0;
 }
 
 body {
-  backgorund-color: rgba(var(--iconColor), 0.05);
+  background-color: var(--tertiary-color);
+  font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Header and Nav Bar */
 
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  background-color: var(--tertiary-color);
+  z-index: 9999;
+}
+
+header h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 20px;
+  color: var(---var(--secondary-color));
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.00vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* Content Style */
+
+#content {
+  padding: 60px;
+}
+
+/* About Section */
+
+.about {
+
+}
+
+/* Work and Jobs Section */
+
+.jobs {
+
+}
+
+/* Featured Projects Section */
+
+.feature {
+
+}
+
+/* Other Projects Section */
+
+.projects {
+
+}
+
+/* Footer Section */
 /* Social Media Icons */
-
-@mixin transformScale($size:1) {
-  transform: scale($size);
-  -ms-transform: scale($size);
-  -webkit-transform: scale($size);
-}
 
 .social-container {
   width: 400px;
@@ -53,8 +128,8 @@ body {
   display: inline-block;
 }
 
-.social-icons a::before {
-  transform: scale(1.0);
+.social-icons a:before {
+  transform: scale(var(--scale));
   content: " ";
   width: 60px;
   height: 60px;
@@ -64,40 +139,16 @@ body {
   transition: all var(--timing) ease-out;
 }
 
-/* FONT STYLES */
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all var(--timing) ease-in;
 }
 
-.fa:hover {
-  opacity: 0.7;
-}
-
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-/* LinkedIn */
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-/* GitHub */
-.fa-github {
-  background: #007bb5;
-  color: white;
-}
-
-/* Codepen */
-.fa-codepen {
-  background: #007bb5;
-  color: white;
+.social-icons a:hover i {
+  transform: scale(2.2);
+  color: var(--iconColor);
+  background: linear-gradient(45deg, var(--iconColor), var(--accent));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all var(--timing) ease-in;
 }
