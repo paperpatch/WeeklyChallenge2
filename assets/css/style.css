@@ -1,7 +1,8 @@
 :root {
-  --secondary-color: #000000;
-  --secondary-color: #024e76;
-  --tertiary-color: #F5FAF9;
+  --blue: #0f83ad;
+  --darkblue: #001d2c;
+  --white: #F5FAF9;
+  --grey: #aaaaaada;
   --timing: 265ms;
   --iconColor: #00B5F5;
   --accent: #003A8F;
@@ -10,34 +11,43 @@
   --scale: 1.0;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: var(--tertiary-color);
+  background-color: var(--darkblue);
   font-family: Helvetica, Arial, sans-serif;
-  color: var(--secondary-color);
+  color: var(--white);
 }
 
 /* Header and Nav Bar */
 
 header {
+  padding: 20px 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  top: 0;
   position: sticky;
-  background-color: var(--tertiary-color);
+  background-color: var(--darkblue);
+  background-position: 80%;
+  border-bottom: 3px solid var(--darkblue);
   z-index: 9999;
 }
 
 header h1 {
   font-weight: bold;
-  padding: 10px 30px;
-  font-size: 20px;
-  color: var(---var(--secondary-color));
-  border: 3px solid var(--secondary-color);
+  margin: 0;
+  font-size: 25px;
+  color: var(---var(--white));
 }
 
 header a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--white);
 }
 
 header nav {
@@ -55,29 +65,82 @@ header nav ul {
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.00vw;
+  font-size: 0.8vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a:hover {
-
   border-radius: 15px;
   text-shadow: none;
+  color: var(--blue);
 }
 
 /* Content Main Style */
 
 #content {
-  padding: 0 150px;
+  padding: 0 400px;
 }
 
 main {
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding: 0px 150px;
-  margin: 0 auto;
+  padding: 300px 150px;
+  margin: auto;
 }
+
+main h1 {
+  color: var(--blue);
+  margin: 0px 0px 20px 4px;
+  font-weight: 400;
+  line-height: 1.1;
+  font-size: 20px;
+}
+
+main h2 {
+  color: var(--white);
+  margin: 0;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 1.1;
+}
+
+main h3 {
+  color: var(--grey);
+  margin: 0;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 3;
+}
+
+main p {
+  color: var(--grey);
+  margin: 0;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+main a {
+  color: var(--blue);
+  text-decoration: none;
+/*   position: relative;
+  transition: color 0.4s ease-out; */
+}
+/* main a::after {
+  border-radius: 1em;
+  border-top: .1em solid var(--blue);
+  content: "";
+  position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+  transition: right .4s cubic-bezier(0, 0.5, 0, 1);
+} */
+main a:visited {text-decoration: none;}
+main a:hover {text-decoration: none;}
+main a:focus {text-decoration: none;}
+main a:active {text-decoration: none;}
 
 /* About Section */
 
@@ -101,7 +164,7 @@ main {
   display: flex;
   width: 900px;
   margin: 0 auto 30px auto;
-  color: var(--secondary-color);
+  color: var(--white);
   overflow: auto;
 }
 
@@ -136,6 +199,23 @@ main {
 }
 
 /* Footer Section */
+
+footer {
+  background: var(--darkblue);
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer h4 {
+  color: var(--white);
+  font-size: 15px;
+  margin: 0 auto;
+  align-items: center;
+}
+
 /* Social Media Icons */
 
 .social-container {
@@ -188,8 +268,125 @@ main {
 .social-icons a:hover i {
   transform: scale(2.2);
   color: var(--iconColor);
-  background: linear-gradient(45deg, var(--iconColor), var(--accent));
+  background: -webkit-linear-gradient(45deg, var(--iconColor), var(--accent));
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all var(--timing) ease-in;
 }
+
+/* Media Query for Smaller Desktop Screen and Smaller */
+
+/* @media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+  
+  .hero-cta {
+    text-align: center;
+  }
+
+  .section-title {
+    width: 80%;
+  }
+  
+  .trainer {
+    flex: 0 70%;
+  }
+  
+  .contact-info iframe{
+    flex: 1 100%;
+  }
+} */
+
+/* Media Query - Tablets and Smaller */
+
+/* @media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;  
+  }
+
+  .trainer-bio h3, .trainer-bio h4 {
+    display: block;
+  }
+} */
+
+/* Media Query for Mobile Phones and Smaller */
+
+/* @media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
+} */
