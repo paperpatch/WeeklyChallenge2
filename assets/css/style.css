@@ -85,7 +85,7 @@ main {
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding: 300px 150px;
+  padding: 300px 300px;
   margin: auto;
 }
 
@@ -144,8 +144,29 @@ main a:active {text-decoration: none;}
 
 /* About Section */
 
-.about {
+.about h2 {
+  overflow: hidden;
+  text-align: left;
+}
+
+.about h2:before,
+.about h2:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: center;
   width: 50%;
+}
+
+.about h2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.about h2:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 /* Work and Jobs Section */
