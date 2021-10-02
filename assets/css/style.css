@@ -11,8 +11,6 @@
   --scale: 1.0;
 }
 
-/* test */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -126,25 +124,21 @@ main p {
 main a {
   color: var(--blue);
   text-decoration: none;
-/*   position: relative;
-  transition: color 0.4s ease-out; */
 }
-/* main a::after {
-  border-radius: 1em;
-  border-top: .1em solid var(--blue);
-  content: "";
-  position: absolute;
-    right: 100%;
-    bottom: .14em;
-    left: 0;
-  transition: right .4s cubic-bezier(0, 0.5, 0, 1);
-} */
 main a:visited {text-decoration: none;}
 main a:hover {text-decoration: none;}
 main a:focus {text-decoration: none;}
 main a:active {text-decoration: none;}
 
 /* About Section */
+
+section {
+  width: 100%;
+  max-width: 900px;
+  min-height: 100vh;
+  padding: 100px 0px;
+  margin: 0 auto;
+}
 
 .about h2 {
   overflow: hidden;
@@ -170,6 +164,8 @@ main a:active {text-decoration: none;}
   left: 0.5em;
   margin-right: -50%;
 }
+
+.about 
 
 /* Work and Jobs Section */
 
