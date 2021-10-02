@@ -21,6 +21,7 @@ body {
   background-color: var(--darkblue);
   font-family: Helvetica, Arial, sans-serif;
   color: var(--white);
+  line-height: 1.3;
 }
 
 /* Header and Nav Bar */
@@ -132,40 +133,34 @@ main a:active {text-decoration: none;}
 
 /* About Section */
 
-section {
+.about h2 {
+  display: block;
+  text-align: left;
+  font-size: 30px;
+}
+
+.inner {
+  display: flex;
+  position: relative;
   width: 100%;
-  max-width: 900px;
-  min-height: 100vh;
-  padding: 100px 0px;
+  line-height: 1.7;
   margin: 0 auto;
 }
 
-.about h2 {
-  overflow: hidden;
-  text-align: left;
-}
-
-.about h2:before,
-.about h2:after {
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: center;
+.text {
   width: 50%;
+  padding: 0 100px 0 0;
 }
 
-.about h2:before {
-  right: 0.5em;
-  margin-left: -50%;
+.about img {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border: 5px solid var(--blue);
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: 10% 60%;
 }
-
-.about h2:after {
-  left: 0.5em;
-  margin-right: -50%;
-}
-
-.about 
 
 /* Work and Jobs Section */
 
@@ -295,6 +290,8 @@ footer h4 {
 }
 
 /* Media Query for Smaller Desktop Screen and Smaller */
+
+/* @media screen and (max-width: 2000px) {
 
 /* @media screen and (max-width: 980px) {
   header {
