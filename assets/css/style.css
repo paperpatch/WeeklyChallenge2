@@ -1,5 +1,6 @@
 :root {
   --blue: #0f83ad;
+  --smalldarkblue: #002b41;
   --darkblue: #001d2c;
   --white: #F5FAF9;
   --grey: #c4c4c4da;
@@ -235,23 +236,51 @@ section {
   text-align: center;
 }
 
+.feature h3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 2.0;
+  text-align: left;
+  margin: 10px 0 30px 0;
+}
+
 .featured-project {
   display: flex;
   width: 900px;
-  margin: 0 auto 30px auto;
+  margin: 20px auto 100px auto;
   color: var(--white);
   overflow: auto;
 }
 
 .featured-project img {
-  width: 35%;
+  width: 100%;
   float: left;
 }
 
 .featured-bio {
-  padding: 35px;
+  padding: 35px 5px 35px 5px;
   float: left;
-  width: 65%;
+  width: 100%;
+}
+
+.feature h1 {
+  font-size: 16px;
+  color: var(--blue);
+}
+
+.feature h2 {
+  font-size: 25px;
+  padding: 7px 0;
+}
+
+.feature h4 {
+  background-color: var(--smalldarkblue);
+  position: relative;
+  padding: 10px 20px;
+}
+
+.feature p {
+  padding: 15px 0;
 }
 
 /* Utilities */
@@ -271,7 +300,6 @@ section {
 
 .projects {
   text-align: center;
-  height: 100%;
   padding: 100px 0;
 }
 
