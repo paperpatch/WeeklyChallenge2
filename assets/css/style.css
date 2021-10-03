@@ -285,6 +285,7 @@ section {
 
 .feature p {
   padding: 15px 0;
+  font-size: 12px;
 }
 
 /* Utilities */
@@ -296,26 +297,85 @@ section {
   text-align: right;
 }
 
+/* Other Projects Section */
+
 .flex-row {
   display: flex;
 }
 
-/* Other Projects Section */
-
-#projects {
+.flex-row h3 {
+  font-size: 30px;
   margin: 0 auto;
+}
+
+.projects {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   text-align: center;
-  padding: 100px 0;
+  padding: 50px 0;
+}
+
+.project {
+  position: relative;
+  margin: 20px;
+  flex: 1;
+  background-color: var(--smalldarkblue);
+  text-align: left;
+}
+
+.project-images {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 20px 0px 20px;
+}
+
+.icon-folder {
+  height: 30%;
+  width: 30%;
+}
+
+.icon-link {
+  height: 15%;
+  width: 15%;
+}
+
+.project-card {
+  padding: 15px 25px 50px 25px;
+  line-height: 1.3;
+}
+
+.project-name {
+  color: var(--white);
+  font-size: 20px;
+  line-height: 2.0;
+}
+
+.project h4 {
+  color: var(--grey);
+  line-height: 1.5;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.project-tools {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 15px;
+}
+
+.project p {
+  color: var(--grey);
+  font-size: 15px;
 }
 
 .other-projects {
   display: block;
   line-height: 2.0;
   font-size: 25px;
-}
-
-.projects {
-  padding: 20px 0;
 }
 
 /* Footer Section */
