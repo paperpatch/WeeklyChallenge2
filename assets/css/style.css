@@ -296,15 +296,57 @@ section {
   text-align: right;
 }
 
+/* Other Projects Section */
+
 .flex-row {
   display: flex;
 }
 
-/* Other Projects Section */
+.flex-row h3 {
+  font-size: 30px;
+  margin: 0 auto;
+}
 
 .projects {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   text-align: center;
-  padding: 100px 0;
+  padding: 50px 0;
+}
+
+.project {
+  margin: 20px;
+  flex: 1;
+  background-color: var(--smalldarkblue);
+  text-align: left;
+}
+
+.project-images {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 20px;
+}
+
+.icon-folder {
+  height: 30%;
+  width: 30%;
+}
+
+.icon-link {
+  height: 15%;
+  width: 15%;
+}
+
+.project-card {
+  padding: 15px 25px;
+  line-height: 1.3;
+}
+
+.project-name {
+
 }
 
 /* Footer Section */
