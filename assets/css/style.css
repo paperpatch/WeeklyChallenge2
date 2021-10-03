@@ -285,6 +285,7 @@ section {
 
 .feature p {
   padding: 15px 0;
+  font-size: 12px;
 }
 
 /* Utilities */
@@ -327,7 +328,7 @@ section {
 .project-images {
   display: flex;
   justify-content: space-between;
-  margin: 15px 20px;
+  margin: 15px 20px 0px 20px;
 }
 
 .icon-folder {
@@ -346,7 +347,22 @@ section {
 }
 
 .project-name {
+  color: var(--white);
+  font-size: 20px;
+  line-height: 2.0;
+}
 
+.project h4 {
+  color: var(--grey);
+  line-height: 1.5;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.project p {
+  color: var(--grey);
+  font-size: 15px;
+  padding: 
 }
 
 /* Footer Section */
