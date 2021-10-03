@@ -302,9 +302,20 @@ section {
 
 /* Other Projects Section */
 
-.projects {
+#projects {
+  margin: 0 auto;
   text-align: center;
   padding: 100px 0;
+}
+
+.other-projects {
+  display: block;
+  line-height: 2.0;
+  font-size: 25px;
+}
+
+.projects {
+  padding: 20px 0;
 }
 
 /* Footer Section */
