@@ -414,8 +414,10 @@ footer {
 }
 
 footer h4 {
-  color: var(--white);
+  color: var(--grey);
   font-size: 15px;
+  font-weight: lighter;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 0 auto;
   align-items: center;
 }
@@ -479,120 +481,145 @@ footer h4 {
   transition: all var(--timing) ease-in;
 }
 
-/* Media Query for Smaller Desktop Screen and Smaller */
+/* Media Query for Larger Desktop Screen and Smaller */
 
-/* @media screen and (max-width: 2000px) {
-
-/* @media screen and (max-width: 980px) {
-  header {
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
+@media screen and (max-width: 1800px) {
+  #content {
+    padding: 0 100px;
   }
-
-  header h1 {
-    width: 100%;
-    text-align: center;
-  }
-
-  header nav ul {
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
-  }
-
   header nav ul li a {
-    font-size: 20px;
+    font-size: 1.0vw;
   }
+  .about {
+    width: 70%;
+    padding: 100px 0 50px 0;
+  }
+}
 
-  footer h2, footer div {
-    text-align: center;
-    width: 100%;
-  }
+/* Media Query for Desktops and Smaller */
 
-  .hero-cta, .hero-form {
-    width: 100%;
+@media screen and (max-width: 1280px) {
+  #content {
+    padding: 0 25px;
   }
-  
-  .hero-cta {
-    text-align: center;
+  header nav ul li a {
+    font-size: 1.5vw;
   }
-
-  .section-title {
+  .about {
     width: 80%;
   }
-  
-  .trainer {
-    flex: 0 70%;
+  .text {
+    line-height: 1.5;
   }
-  
-  .contact-info iframe{
-    flex: 1 100%;
+  .feature {
+    width: 85%;
   }
-} */
-
-/* Media Query - Tablets and Smaller */
-
-/* @media screen and (max-width: 768px) {
-  section {
-    padding: 30px 15px;
+  .contacts {
+    margin: 0 100px;
   }
+}
 
-  .step h3 {
-    flex: 1 100%;
-    text-align: center;
+/* Media Query for Tablets Ipads Portrait Mode and Smaller */
+
+@media screen and (max-width: 1024px) {
+  .feature {
+    width: 92%;
   }
-
-  .step-info {
-    flex: 2 100%;
-    text-align: center;
-    justify-content: center;
+  .featured-project img {
+    width: 60%;
   }
+}
 
-  .step-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
+/* Media Query for Low Resolution Tablets and Ipads and Smaller */
+
+@media screen and (max-width: 767px) {
+  header nav ul li a {
+    font-size: 2.2vw;
   }
-
-  .step-text {
-    flex: 100%;  
+  main h3 {
+    line-height: 1.0;
+    margin: 5px 0;
   }
-
-  .trainer-bio h3, .trainer-bio h4 {
+  main p {
+    line-height: 1.0;
+    margin: 5px 0;
+  }
+  .about {
+    width: 90%;
+  }
+  .inner {
     display: block;
   }
-} */
+  .about img {
+    margin: 20px auto 0 auto;
+  }
+  .featured-project {
+    display: block;
+  }
+  .featured-project img {
+    width: 100%;
+  }
+  .projects {
+    flex-direction: column;
+  }
+  .icon-folder {
+    height: 10%;
+    width: 10%;
+  }
+  .icon-link {
+    height: 5%;
+    width: 5%;
+  }
+}
 
 /* Media Query for Mobile Phones and Smaller */
 
-/* @media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px;
   }
-
-  .section-title {
-    width: 95%;
+  #content {
+    padding: 0;
   }
-
-  .intro p {
-    width: 100%;
+  main {
+    padding: 50px 20px 20px 20px;
+    min-height: 80vh;
   }
-
-  .trainer {
-    flex: 0 100%;
+  main h2 {
+    font-size: 50px;
+    margin: 15px 0;
   }
-
-  .contact-info {
-    text-align: center;
+  main h3 {
+    font-size: 25px;
+    margin: 15px 0;
   }
-
-  .contact-info > * {
-    flex: 0 100%;
+  main p {
+    font-size: 15px;
   }
-
-  .contact-form {
-    order: 3;
+  header nav ul li a {
+    font-size: 4.0vw;
   }
-} */
+  .projects {
+    padding: 20px 0 20px 0;
+  }
+  .contacts {
+    margin: 20px;
+    padding: 100px 0;
+  }
+  .contacts h2 {
+    line-height: 1.0;
+    padding: 20px 0;
+  }
+  .contacts p {
+    padding: 10px 0;
+  }
+  footer {
+    padding: 50px 0px;
+  }
+  .social-container {
+    margin: auto;
+  }
+  .social-icons {
+    margin: 0;
+  }
+}
