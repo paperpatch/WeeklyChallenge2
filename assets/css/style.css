@@ -232,11 +232,17 @@ section {
 /* Featured Projects Section */
 
 .feature {
-  width: 70%;
+  width: 65%;
   height: 100%;
   padding: 100px 0 150px 0;
   text-align: center;
 }
+
+.feature a {text-decoration: none;}
+.feature a:visited {text-decoration: none;}
+.feature a:hover {text-decoration: none;}
+.feature a:focus {text-decoration: none;}
+.feature a:active {text-decoration: none;}
 
 .feature h1 {
   font-size: 16px;
@@ -246,6 +252,7 @@ section {
 
 .feature h2 {
   font-size: 25px;
+  color: var(--white);
   padding: 7px 0;
 }
 
@@ -276,6 +283,9 @@ section {
 
 .featured-project img {
   width: 100%;
+  height: 400px;
+  width: 550px;
+  object-fit: cover;
   float: left;
 }
 
@@ -327,6 +337,20 @@ section {
   background-color: var(--smalldarkblue);
   text-align: left;
 }
+
+.project a {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  text-decoration: none;
+  text-align: right;
+}
+.project a:visited {text-decoration: none;}
+.project a:hover {text-decoration: none; transform: scale(1.01);}
+.project a:focus {text-decoration: none;}
+.project a:active {text-decoration: none;}
+
 
 .project-images {
   display: flex;
@@ -494,6 +518,9 @@ footer h4 {
     width: 70%;
     padding: 100px 0 50px 0;
   }
+  .feature {
+    width: 75%;
+  }
 }
 
 /* Media Query for Desktops and Smaller */
@@ -526,7 +553,7 @@ footer h4 {
     width: 92%;
   }
   .featured-project img {
-    width: 60%;
+    width: 100%;
   }
 }
 
@@ -555,9 +582,6 @@ footer h4 {
   }
   .featured-project {
     display: block;
-  }
-  .featured-project img {
-    width: 100%;
   }
   .projects {
     flex-direction: column;
