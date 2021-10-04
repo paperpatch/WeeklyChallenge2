@@ -1,5 +1,4 @@
-# WeeklyChallenge2
-UConn Bootcamp Weekly Challenge 2: Advanced CSS Challenge: Professional Portfolio
+# Professional Portfolio
 
 ## CONTENTS OF THIS FILE
 
@@ -13,7 +12,7 @@ UConn Bootcamp Weekly Challenge 2: Advanced CSS Challenge: Professional Portfoli
 
 ## INTRODUCTION
 
-UConn Bootcamp Weekly Challenge 2: Professional Portfolio <br />
+UConn Bootcamp Weekly Challenge 2: Advanced CSS Challenge: Professional Portfolio <br />
 Build a personal portfolio page.<br />
 <br/>
 Built With:
