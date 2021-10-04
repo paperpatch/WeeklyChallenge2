@@ -42,9 +42,9 @@ WHEN I resize the page or view the site on various screens and devices <br/>
 THEN I am presented with a responsive layout that adapts to my viewport
 
 ## ACCESS
-https://paperpatch.github.io/WeeklyChallenge2/
+https://paperpatch.github.io/weekly-challenge-2/
 
-Version edits and changes can be found in Github commit changes at https://github.com/paperpatch/WeeklyChallenge2/
+Version edits and changes can be found in Github commit changes at https://github.com/paperpatch/weekly-challenge-2/
 
 ![Alt text](./assets/images/portfolio-screenshot.png "portfolio page screenshot") 
 
