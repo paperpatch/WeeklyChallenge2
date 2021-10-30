@@ -1,200 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Patrick Chen</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Patrick Chen</title>
+</head>
 
-  <body>
-    <header>
-      <h1>
-        <a href="">PC</a>
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#feature">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="./index.html">PC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class = "collapse navbar-collapse text-right" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#feature">Projects</a></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-      </nav>
-    </header>
-    
-    <div id="content">
-      <main class="intro">
-        <h1>Hi, my name is</h1>
-        <h2>Patrick Chen.</h2>
-        <h3>Aspiring Full-Stack Developer</h3>
-        <p>I'm a software engineer specializing in full-stack. <br/>
-          Currently, I am a student learning to code at <a href="https://bootcamp.uconn.edu/" target="_blank" rel="noreferrer">UConn Bootcamp</a>.</p>
-      </main>
+      </div>
+    </nav>
+  </header>
+  
+  <main id="content">
+    <div class="intro">
+      <h1>Hi, my name is</h1>
+      <h2>Patrick Chen.</h2>
+      <h3>Full-Stack Developer</h3>
+      <p>I'm a software engineer specializing in full-stack. <br/>
+        Currently, I am a student learning to code at <a href="https://bootcamp.uconn.edu/" target="_blank" rel="noreferrer">UConn Bootcamp</a>.</p>
+    </div>
 
-      <section id="about" class="about">
-        <h2>
-          About Me
-        </h2> <br/>
-        <div class="inner">
-          <div class="text">
-            <p>
-              Hello! My name is Pat and I enjoy creating things on the internet. My interest in coding started when a friend introduced me and thought I would be a good fit. Previously a civil engineer, I decided to take a career change for coding to pursue making things that would excite me.
-            </p> <br />
-            <p>
-              I am looking forward to learning about machine algorithm scripting and artificial intelligence. My current focus is to build a repertoire of coding skills and experience to better explore where I stand in this rapid technological developing world.</p>
-            <p> <br />
-              Apart from coding, I enjoy sports like volleyball, cycling and ultimate. As for hobbies, I occassionally play chess on my free time.
-            </p>
-          </div>
-          <div>
-            <img src="./assets/images/profile-pic-1.jpg" alt="Profile picture of Pat Chen" />
-          </div>
+    <section id="about" class="about">
+      <h2>
+        About Me
+      </h2> <br/>
+      <div class="inner">
+        <div class="text">
+          <p>
+            Hello! My name is Pat and I enjoy creating things on the internet. My interest in coding started when a friend introduced me and thought I would be a good fit. Previously a civil engineer, I decided to take a career change for coding to pursue making things that would excite me.
+          </p> <br />
+          <p>
+            I am looking forward to learning about machine algorithm scripting and artificial intelligence. My current focus is to build a repertoire of coding skills and experience to better explore where I stand in this rapid technological developing world.</p>
+          <p> <br />
+            Apart from coding, I enjoy sports like volleyball, cycling and ultimate. As for hobbies, I occassionally play chess on my free time.
+          </p>
         </div>
-      </section>
+        <div>
+          <img src="./assets/images/profile-pic-1.jpg" alt="Profile picture of Pat Chen" />
+        </div>
+      </div>
+    </section>
 
-      <section id="experience" class="jobs">
-        <h2>
-          Experience
-        </h2>
+    <section id="experience" class="jobs">
+      <h2>
+        Experience
+      </h2>
 
-        <article>
-          <h3>
-            Student @ <a href="https://bootcamp.uconn.edu/" target="_blank">UConn Bootcamp</a>
-          </h3>
-          <p class="range">September 2021 - Present</p> <br/>
-          <ul>
-            <li>
-              Worked with a variety of languages, platforms, frameworks, and content management systems such as JavaScript, [more to come].
-            </li>
-            <li>
-              Collaborated with a small team of student designers to build a [future project], [project descriping what it does].
-            </li>
-            <li>
-              Experienced with developing and maintaining code for in-house and clients primarily using HTML, CSS and JavaScript.
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>
-            Engineer @ <a href="https://www.gargengineering.com/" target="_blank">Garg Consulting Services</a>
-          </h3>
-          <p class="range">April 2016 - September 2021</p> <br/>
-          <ul>
-            <li>
-              Inspection and documentation of all construction activities, working with Amtrak and Metro North force account project activities. Coordinated and implemented all enginerring, technical, or administrative determinations. Projects include 0301-0334 Route 8 Highway Rehabilitation and 0300-0138 New Haven Rail Yard West End.
-            </li>
-            <li>
-              Office Engineer for development of schedules, estimates, constructability reviews, and value engineering. Duties included field coordination, utility coordination, and setting up databases. Coordinated and assisted with Environmental Engineering in the development of NEPA/CEPA/permitting documents. Projects include the 0301-0176 Walk Bridge Replacement in Norwalk, Connecticut.
-            </li>
-            <li>
-              Responsible for logging data, submittals, and inquiries; managing and organizing documents including contracts and specifications; drafting responses for inquiries and reviewing engineer responses for specification conformity. Projects include the New Haven Rail Facility such as the 0301-0106 Component Change Out, 0301-0121 Central Distribution Warehouse and 0301-0124 Maintenance of Way Project.
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>
-            Student @ <a href="https://uconn.edu/" target="_blank">University of Connecticut</a>
-          </h3>
-          <p class="range">Winter 2015</p> <br/>
+      <article>
+        <h3>
+          Student @ <a href="https://bootcamp.uconn.edu/" target="_blank">UConn Bootcamp</a>
+        </h3>
+        <p class="range">September 2021 - Present</p> <br/>
+        <ul>
           <li>
-            Designed sidewalk for predestrians using AutoCAD. Performed calculations on culvert design for improvements on Route 89.
+            Worked with a variety of languages, platforms, frameworks, and content management systems such as JavaScript, [more to come].
           </li>
           <li>
-            Project leader for scheduling goals, deadlines, regulated cost estimates on design project through weekly meetings and discussions.
+            Collaborated with a small team of student designers to build a [future project], [project descriping what it does].
           </li>
-        </article>
-      </section>
+          <li>
+            Experienced with developing and maintaining code for in-house and clients primarily using HTML, CSS and JavaScript.
+          </li>
+        </ul>
+      </article>
 
-      <section id="feature" class="feature">
-        <h3>Featured Projects</h3>
+      <article>
+        <h3>
+          Engineer @ <a href="https://www.gargengineering.com/" target="_blank">Garg Consulting Services</a>
+        </h3>
+        <p class="range">April 2016 - September 2021</p> <br/>
+        <ul>
+          <li>
+            Inspection and documentation of all construction activities, working with Amtrak and Metro North force account project activities. Coordinated and implemented all enginerring, technical, or administrative determinations. Projects include 0301-0334 Route 8 Highway Rehabilitation and 0300-0138 New Haven Rail Yard West End.
+          </li>
+          <li>
+            Office Engineer for development of schedules, estimates, constructability reviews, and value engineering. Duties included field coordination, utility coordination, and setting up databases. Coordinated and assisted with Environmental Engineering in the development of NEPA/CEPA/permitting documents. Projects include the 0301-0176 Walk Bridge Replacement in Norwalk, Connecticut.
+          </li>
+          <li>
+            Responsible for logging data, submittals, and inquiries; managing and organizing documents including contracts and specifications; drafting responses for inquiries and reviewing engineer responses for specification conformity. Projects include the New Haven Rail Facility such as the 0301-0106 Component Change Out, 0301-0121 Central Distribution Warehouse and 0301-0124 Maintenance of Way Project.
+          </li>
+        </ul>
+      </article>
 
-        
-        <article class="featured-project">
+      <article>
+        <h3>
+          Student @ <a href="https://uconn.edu/" target="_blank">University of Connecticut</a>
+        </h3>
+        <p class="range">Winter 2015</p> <br/>
+        <li>
+          Designed sidewalk for predestrians using AutoCAD. Performed calculations on culvert design for improvements on Route 89.
+        </li>
+        <li>
+          Project leader for scheduling goals, deadlines, regulated cost estimates on design project through weekly meetings and discussions.
+        </li>
+      </article>
+    </section>
+
+    <section id="feature" class="feature">
+      <h3>Featured Projects</h3>
+
+      
+      <article class="featured-project">
+        <a href="https://github.com/paperpatch/module-2" target="_blank">
+          <img src="./assets/images/run-buddy-screenshot.PNG" alt="run buddy webpage" />
+        </a>
+        <div class="featured-bio text-right">
+          <h1>Featured Project</h1>
           <a href="https://github.com/paperpatch/module-2" target="_blank">
-            <img src="./assets/images/run-buddy-screenshot.PNG" alt="run buddy webpage" />
+            <h2>Run Buddy</h2>
           </a>
-          <div class="featured-bio text-right">
-            <h1>Featured Project</h1>
-            <a href="https://github.com/paperpatch/module-2" target="_blank">
-              <h2>Run Buddy</h2>
-            </a>
-            <h4>Following UConn Bootcamp's tutorial guide to learn about advanced CSS - including media queries and flexbox to make Run Buddy site more engaging and mobile-responsive.</h4>
-            <p>HTML CSS</p>
-          </div>
-        </article>
-
-        <article class="featured-project">
-          <div class="featured-bio text-left">
-            <h1>Featured Project</h1>
-            <a href="#" target="_blank">
-              <h2>Featured Title</h2>
-            </a>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis corrupti quibusdam, molestiae nostrum itaque facilis aliquid laudantium sapiente corporis unde! Deserunt impedit repellendus, neque debitis perspiciatis maiores nihil soluta!</h4>
-            <p>HTML CSS</p>
-          </div>
-          <a href="#" target="_blank">
-            <img src="https://via.placeholder.com/500x300" alt="featured-project-2" />
-          </a>
-        </article>
-
-
-        <article class="featured-project">
-          <a href="#" target="_blank">
-            <img src="https://via.placeholder.com/500x300" alt="featured-project-3" />
-          </a>
-          <div class="featured-bio text-right">
-            <h1>Featured Project</h1>
-            <a href="#" target="_blank">
-              <h2>Featured Title</h2>
-            </a>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque sunt ipsam unde error ut soluta dolorum rem porro nemo perferendis consequuntur labore molestias, modi est quo repellat quam officiis.</h4>
-            <p>HTML CSS JavaScript</p>
-          </div>
-        </article>
-
-      </section>
-
-      <section id="projects">
-        <div class="flex-row">
-          <h3>Other Projects</h3>
+          <h4>Following UConn Bootcamp's tutorial guide to learn about advanced CSS - including media queries and flexbox to make Run Buddy site more engaging and mobile-responsive.</h4>
+          <p>HTML CSS</p>
         </div>
+      </article>
 
-        <div class="projects">
-          <article class="project">
-            <div class="project-images">
-              <img class="icon-folder" src="./assets/images/icon-folder.png" alt="folder icon" />
-              <a href="https://github.com/paperpatch/weekly-challenge-1" target="_blank">
-                <img class="icon-link" src="./assets/images/external-link.png" alt="external link icon" />
-              </a>
-            </div>
-            <div class="project-card">
-              <h3 class="project-name">Code Refactor</h3>
-              <h4>Modified the starter code (Horiseon webpage) for web accessibility standards.</h4>
-            </div>
-            <div class="project-tools">
-              <p>HTML CSS</p>
-            </div>
-          </article>
+      <article class="featured-project">
+        <div class="featured-bio text-left">
+          <h1>Featured Project</h1>
+          <a href="#" target="_blank">
+            <h2>Featured Title</h2>
+          </a>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis corrupti quibusdam, molestiae nostrum itaque facilis aliquid laudantium sapiente corporis unde! Deserunt impedit repellendus, neque debitis perspiciatis maiores nihil soluta!</h4>
+          <p>HTML CSS</p>
+        </div>
+        <a href="#" target="_blank">
+          <img src="https://via.placeholder.com/500x300" alt="featured-project-2" />
+        </a>
+      </article>
 
 
-            <article class="project">
-              <div class="project-images">
-                <img class="icon-folder" src="./assets/images/icon-folder.png" alt="folder icon" />
-                <a href="#" target="_blank">
-                  <img class="icon-link" src="./assets/images/external-link.png" alt="external link icon" />
-                </a>
-              </div>
-              <div class="project-card">
-                <h3 class="project-name">Project Name</h3>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laudantium voluptatibus ea. Cumque incidunt repellendus deleniti reprehenderit minima labore, aliquid omnis in aspernatur, sequi, molestiae fugiat itaque velit illo placeat?</h4>
-              </div>
-              <div class="project-tools">
-                <p>HTML CSS</p>
-              </div>
-            </article>
+      <article class="featured-project">
+        <a href="#" target="_blank">
+          <img src="https://via.placeholder.com/500x300" alt="featured-project-3" />
+        </a>
+        <div class="featured-bio text-right">
+          <h1>Featured Project</h1>
+          <a href="#" target="_blank">
+            <h2>Featured Title</h2>
+          </a>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque sunt ipsam unde error ut soluta dolorum rem porro nemo perferendis consequuntur labore molestias, modi est quo repellat quam officiis.</h4>
+          <p>HTML CSS JavaScript</p>
+        </div>
+      </article>
+
+    </section>
+
+    <section id="projects">
+      <div class="flex-row">
+        <h3>Other Projects</h3>
+      </div>
+
+      <div class="projects">
+        <article class="project">
+          <div class="project-images">
+            <img class="icon-folder" src="./assets/images/icon-folder.png" alt="folder icon" />
+            <a href="https://github.com/paperpatch/weekly-challenge-1" target="_blank">
+              <img class="icon-link" src="./assets/images/external-link.png" alt="external link icon" />
+            </a>
+          </div>
+          <div class="project-card">
+            <h3 class="project-name">Code Refactor</h3>
+            <h4>Modified the starter code (Horiseon webpage) for web accessibility standards.</h4>
+          </div>
+          <div class="project-tools">
+            <p>HTML CSS</p>
+          </div>
+        </article>
 
 
           <article class="project">
@@ -206,33 +204,61 @@
             </div>
             <div class="project-card">
               <h3 class="project-name">Project Name</h3>
-              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor voluptate cupiditate dolore, deleniti nam iste quae tempore ipsa aut modi nostrum repellat iure? Quos doloribus alias impedit dolores amet?</h4>
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laudantium voluptatibus ea. Cumque incidunt repellendus deleniti reprehenderit minima labore, aliquid omnis in aspernatur, sequi, molestiae fugiat itaque velit illo placeat?</h4>
             </div>
             <div class="project-tools">
               <p>HTML CSS</p>
             </div>
           </article>
-        </div>
-      </section>
 
-      <section id="contact">
-        <div class="contacts">
-          <h2>Get In Touch</h2>
-          <p>I am looking for new opportunities to grow. My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you! Click on the icons below!</p>
-        </div>
-      </section>
 
-      <footer>
-        <div class="social-container">
-          <ul class="social-icons">
-            <li><a href="https://www.facebook.com/patchen21/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/patchen21/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/paperpatch" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://codepen.io/paperpatch" target="_blank"><i class="fa fa-codepen"></i></a></li>
-          </ul>
-          <h4>Designed & Built by Patrick Chen</h4>
-        </div>
-      </footer>
-    </div>
-  </body>
+        <article class="project">
+          <div class="project-images">
+            <img class="icon-folder" src="./assets/images/icon-folder.png" alt="folder icon" />
+            <a href="#" target="_blank">
+              <img class="icon-link" src="./assets/images/external-link.png" alt="external link icon" />
+            </a>
+          </div>
+          <div class="project-card">
+            <h3 class="project-name">Project Name</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor voluptate cupiditate dolore, deleniti nam iste quae tempore ipsa aut modi nostrum repellat iure? Quos doloribus alias impedit dolores amet?</h4>
+          </div>
+          <div class="project-tools">
+            <p>HTML CSS</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contacts">
+        <h2>Get In Touch</h2>
+        <p>I am looking for new opportunities to grow. My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you! Click on the icons below!</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social-container">
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/patchen21/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/patchen21/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/paperpatch" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://codepen.io/paperpatch" target="_blank"><i class="fa fa-codepen"></i></a></li>
+        </ul>
+        <h4>Designed & Built by Patrick Chen</h4>
+      </div>
+    </footer>
+  </main>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
 </html>

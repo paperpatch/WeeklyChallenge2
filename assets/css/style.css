@@ -1,4 +1,5 @@
 :root {
+  --font-family-sans-serif: 'Roborto', sans-serif;
   --blue: #0f83ad;
   --smalldarkblue: #002b41;
   --darkblue: #001d2c;
@@ -20,7 +21,7 @@
 
 body {
   background-color: var(--darkblue);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: var(--font-family-sans-serif);
   color: var(--white);
   line-height: 1.3;
 }
@@ -28,6 +29,14 @@ body {
 /* Header and Nav Bar */
 
 header {
+  background-color: var(--darkblue);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--white);
+}
+
+/* header {
   padding: 20px 35px;
   display: flex;
   justify-content: space-between;
@@ -38,9 +47,9 @@ header {
   background-position: 80%;
   border-bottom: 3px solid var(--darkblue);
   z-index: 9999;
-}
+} */
 
-header h1 {
+/* header h1 {
   font-weight: bold;
   margin: 0;
   font-size: 25px;
@@ -75,7 +84,7 @@ header nav ul li a:hover {
   border-radius: 15px;
   text-shadow: none;
   color: var(--blue);
-}
+} */
 
 /* Content Main Style */
 
