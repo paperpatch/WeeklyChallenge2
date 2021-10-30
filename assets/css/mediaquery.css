@@ -1,0 +1,143 @@
+
+/* Media Query for Larger Desktop Screen and Smaller */
+
+@media screen and (max-width: 1800px) {
+  #content {
+    padding: 0 100px;
+  }
+  header nav ul li a {
+    font-size: 1.0vw;
+  }
+  .about {
+    width: 70%;
+    padding: 100px 0 50px 0;
+  }
+  .feature {
+    width: 75%;
+  }
+}
+
+/* Media Query for Desktops and Smaller */
+
+@media screen and (max-width: 1280px) {
+  #content {
+    padding: 0 25px;
+  }
+  header nav ul li a {
+    font-size: 1.5vw;
+  }
+  .about {
+    width: 80%;
+  }
+  .text {
+    line-height: 1.5;
+  }
+  .feature {
+    width: 85%;
+  }
+  .contacts {
+    margin: 0 100px;
+  }
+}
+
+/* Media Query for Tablets Ipads Portrait Mode and Smaller */
+
+@media screen and (max-width: 1024px) {
+  .feature {
+    width: 92%;
+  }
+  .featured-project img {
+    width: 100%;
+  }
+}
+
+/* Media Query for Low Resolution Tablets and Ipads and Smaller */
+
+@media screen and (max-width: 767px) {
+  header nav ul li a {
+    font-size: 2.2vw;
+  }
+  main h3 {
+    line-height: 1.0;
+    margin: 5px 0;
+  }
+  main p {
+    line-height: 1.0;
+    margin: 5px 0;
+  }
+  .about {
+    width: 90%;
+  }
+  .inner {
+    display: block;
+  }
+  .about img {
+    margin: 20px auto 0 auto;
+  }
+  .featured-project {
+    display: block;
+  }
+  .projects {
+    flex-direction: column;
+  }
+  .icon-folder {
+    height: 10%;
+    width: 10%;
+  }
+  .icon-link {
+    height: 5%;
+    width: 5%;
+  }
+}
+
+/* Media Query for Mobile Phones and Smaller */
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+  #content {
+    padding: 0;
+  }
+  main {
+    padding: 50px 20px 20px 20px;
+    min-height: 80vh;
+  }
+  main h2 {
+    font-size: 50px;
+    margin: 15px 0;
+  }
+  main h3 {
+    font-size: 25px;
+    margin: 15px 0;
+  }
+  main p {
+    font-size: 15px;
+  }
+  header nav ul li a {
+    font-size: 4.0vw;
+  }
+  .projects {
+    padding: 20px 0 20px 0;
+  }
+  .contacts {
+    margin: 20px;
+    padding: 100px 0;
+  }
+  .contacts h2 {
+    line-height: 1.0;
+    padding: 20px 0;
+  }
+  .contacts p {
+    padding: 10px 0;
+  }
+  footer {
+    padding: 50px 0px;
+  }
+  .social-container {
+    margin: auto;
+  }
+  .social-icons {
+    margin: 0;
+  }
+}
