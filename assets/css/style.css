@@ -23,6 +23,12 @@ body {
 }
 
 /* Nav-Bar Section*/
+.navbar {
+  background-color: var(--darkblue);
+  top: 0;
+  transition: top 0.3s;
+}
+
 #navbarNavAltMarkup {
   padding-right: 20px;
 }
@@ -35,11 +41,6 @@ body {
 .container-fluid {
   padding: 0px 3rem;
 }
-
-.navbar-dark {
-  background-color: var(--darkblue);
-}
-
 
 .nav-link {
   font-size: 19px;
@@ -242,11 +243,13 @@ section {
 }
 
 .feature img {
-  opacity: 60%
+  opacity: 60%;
+  transition: all 0.5s ease-out;
 }
 
 .feature img:hover {
   opacity: 100%;
+  transform: scale(1.03);
 }
 
 /* Other Projects Section */
@@ -266,7 +269,9 @@ section {
   transform: translateY(-0.1in);
   border: solid 1px var(--cyan);
 }
-.project-card:hover .bi-folder, .project-card:hover .card-title{
+
+.project-card:hover .bi-folder,
+.project-card:hover .card-title {
   color: var(--darkcyan);
 }
 
