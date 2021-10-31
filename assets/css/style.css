@@ -32,13 +32,18 @@ body {
   padding: 10px;
 }
 
+.container-fluid {
+  padding: 0px 3rem;
+}
+
 .navbar-dark {
   background-color: var(--darkblue);
 }
 
+
 .nav-link {
   font-size: 19px;
-  padding: 10px 15px;
+  padding: 1rem;
 }
 
 .nav-item.nav-link.active:hover {
@@ -254,18 +259,24 @@ section {
   width: 25rem;
   height: 20rem;
   margin: 0.5rem;
+  transition: all 0.5s ease-out;
+}
+
+.project-card:hover {
+  transform: translateY(-0.1in);
+  border: solid 1px var(--cyan);
+}
+.project-card:hover .bi-folder, .project-card:hover .card-title{
+  color: var(--darkcyan);
 }
 
 .project-card a {
   color: var(--white);
+  text-decoration: none;
 }
 
 .bi-box-arrow-up-right {
   text-align: right;
-}
-
-.bi-box-arrow-up-right:hover {
-  transform: scale(1.01);
 }
 
 .text-sub {
