@@ -11,7 +11,6 @@
 
 Patrick Chen's personal portfolio. <br />
 
-<br/>
 Built With:
 - HTML
 - CSS
@@ -20,7 +19,7 @@ Built With:
 ![Alt text](./assets/images/portfolio-screenshot.png "portfolio page screenshot") 
 
 ## DEPLOYMENT
-See my [portfolio!](https://paperpatch.github.io/weekly-challenge-2/)
+See my [portfolio!](https://paperpatch.github.io/personal_portfolio/)
 
 Check the rest of my GitHub profile for more of my repositories!
 
