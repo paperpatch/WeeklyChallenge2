@@ -46,6 +46,7 @@ body {
 .nav-link {
   font-size: 19px;
   padding: 1rem;
+  transition: all 0.5s ease-out;
 }
 
 .nav-item.nav-link.active:hover {
@@ -104,6 +105,7 @@ li {
 .feature a {
   color: var(--cyan);
   text-decoration: none;
+  transition: all 0.5s ease-out;
 }
 
 .intro a:hover,
@@ -119,7 +121,7 @@ section {
   margin: 0 auto;
   padding: 4rem;
   opacity: 1;
-  transition: opacity 2s ease;
+  transition: all 2s ease;
 }
 
 .hidden {
@@ -229,6 +231,7 @@ section {
 .card-title {
   font-size: 25px;
   color: var(--white);
+  transition: all 0.3s ease-out;
 }
 
 .card-body {
@@ -271,7 +274,7 @@ section {
   width: 25rem;
   height: 20rem;
   margin: 0.5rem;
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
 }
 
 .project-card:hover {
@@ -282,6 +285,7 @@ section {
 .project-card:hover .bi-folder,
 .project-card:hover .card-title {
   color: var(--darkcyan);
+  transition: all 0.5s ease-out;
 }
 
 .project-card a {
@@ -291,6 +295,7 @@ section {
 
 .bi-box-arrow-up-right {
   text-align: right;
+  transition: all 0.5s ease-out;
 }
 
 .text-sub {
@@ -340,6 +345,10 @@ footer h4 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 0 auto;
   align-items: center;
+  transition: all 0.5s ease-out;
+}
+footer h4:hover {
+  color: var(--darkcyan);
 }
 
 /* Social Media Icons */
