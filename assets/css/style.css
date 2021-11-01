@@ -23,6 +23,7 @@ body {
 }
 
 /* Nav-Bar Section*/
+
 .navbar {
   background-color: var(--darkblue);
   top: 0;
@@ -117,7 +118,14 @@ li {
 section {
   margin: 0 auto;
   padding: 4rem;
+  opacity: 1;
+  transition: opacity 2s ease;
 }
+
+.hidden {
+  opacity: 0;
+}
+
 
 .about {
   width: 80%;
@@ -253,6 +261,7 @@ section {
 }
 
 /* Other Projects Section */
+
 .projects {
   padding: 2rem 0;
 }
