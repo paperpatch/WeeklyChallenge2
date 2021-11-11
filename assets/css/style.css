@@ -120,7 +120,7 @@ section {
   margin: 0 auto;
   padding: 4rem;
   opacity: 1;
-  transition: all 2s ease;
+  transition: all 1s ease;
 }
 
 .hidden {
