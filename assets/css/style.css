@@ -44,7 +44,7 @@ body {
 }
 
 .nav-link {
-  font-size: 19px;
+  font-size: 18px;
   padding: 1rem;
   transition: all 0.5s ease-out;
 }
@@ -92,7 +92,7 @@ ul,
 li {
   color: var(--grey);
   font-weight: 100;
-  font-size: 16px;
+  font-size: 19px;
 }
 
 .intro p {
@@ -134,7 +134,7 @@ section {
 
 .title {
   text-align: left;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   padding: 1rem 0;
 }
@@ -160,7 +160,7 @@ section {
 
 .jobs {
   height: 100%;
-  width: 70%;
+  width: 65%;
   padding: 100px 0 150px 0;
 }
 
@@ -250,6 +250,7 @@ section {
 }
 
 .feature img {
+  max-width: 45rem;
   opacity: 60%;
   transition: all 0.5s ease-out;
 }
@@ -314,7 +315,6 @@ section {
 
 .contacts p {
   margin: 0 auto;
-  font-size: 15px;
   color: var(--grey);
   line-height: 2.0;
 }
@@ -331,7 +331,7 @@ footer {
 
 footer h4 {
   color: var(--grey);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: lighter;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 0 auto;
