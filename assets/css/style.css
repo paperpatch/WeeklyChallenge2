@@ -211,7 +211,6 @@ section {
 .feature-project {
   background-color: var(--darkblue);
   border-style: none;
-  max-width: 150rem;
   padding: 3rem 0;
 }
 
@@ -222,6 +221,10 @@ section {
   border-style: none;
   background-color: var(--darkblue);
   padding: 0.5rem;
+}
+
+.img-fluid {
+  width: 100%;
 }
 
 .card-title {
