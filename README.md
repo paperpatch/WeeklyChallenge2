@@ -4,7 +4,7 @@ Patrick Chen's personal portfolio.
 
 ## TABLE OF CONTENTS
 
-# [Portfolio](#portfolio)
+* [Portfolio](#portfolio)
 * [Deployment](#deployment)
 * [Contribution](#contribution)
 
