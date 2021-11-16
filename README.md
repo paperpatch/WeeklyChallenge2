@@ -1,20 +1,12 @@
 # Portfolio
 
-## CONTENTS OF THIS FILE
+Patrick Chen's personal portfolio.
 
-* Introduction
-* Acceptance Criteria
-* Deployment
-* Contribution
+## TABLE OF CONTENTS
 
-## INTRODUCTION
-
-Patrick Chen's personal portfolio. <br />
-
-Built With:
-- HTML
-- CSS
-- BootStrap v5.1
+# [Portfolio](#portfolio)
+* [Deployment](#deployment)
+* [Contribution](#contribution)
 
 ![Alt text](./assets/images/portfolio-screenshot.png "portfolio page screenshot") 
 
