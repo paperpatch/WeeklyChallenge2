@@ -101,7 +101,9 @@ li {
 
 .intro a,
 .jobs a,
-.feature a {
+.feature a,
+.contacts a,
+.btn {
   color: var(--cyan);
   text-decoration: none;
   transition: all 0.5s ease-out;
@@ -110,7 +112,9 @@ li {
 .intro a:hover,
 .jobs a:hover,
 .feature a:hover,
-.project-card a:hover {
+.project-card a:hover,
+.contacts a:hover,
+.btn:hover {
   color: var(--darkcyan);
 }
 
@@ -322,11 +326,22 @@ section {
   line-height: 2.0;
 }
 
+.btn  {
+  margin-top: 3rem;
+  border: 2px solid var(--cyan);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  transform: scale(1.25);
+}
+
 /* Footer Section */
 
 footer {
   background: var(--darkblue);
-  padding: 5% 35px;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
