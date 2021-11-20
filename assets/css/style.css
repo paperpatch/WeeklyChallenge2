@@ -53,11 +53,6 @@ body {
   color: var(--cyan);
 }
 
-/* Main Section */
-
-main {
-  margin: 0 auto;
-}
 
 /* Intro Section */
 
@@ -87,6 +82,10 @@ main {
   font-size: 40px;
 }
 
+.intro p {
+  padding: 30px 0px;
+}
+
 p,
 ul,
 li {
@@ -95,9 +94,7 @@ li {
   font-size: 19px;
 }
 
-.intro p {
-  padding: 30px 0px;
-}
+/* Utilities */
 
 .intro a,
 .jobs a,
@@ -118,32 +115,35 @@ li {
   color: var(--darkcyan);
 }
 
-/* About Section */
-
-section {
-  margin: 0 auto;
-  padding: 4rem;
-  opacity: 1;
-  transition: all 1s ease;
-}
-
 .hidden {
   opacity: 0;
 }
 
+/* About Section */
+
+section {
+  margin: 0 auto;
+  transition: all 1s ease;
+  padding-bottom: 20vh;
+}
 
 .about {
-  width: 60%;
+  width: 45%;
 }
 
 .title {
-  text-align: left;
+  text-align: center;
   font-size: 35px;
   font-weight: bold;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
+  line-height: 2.0;
 }
 
-.text {
+.inner {
+  padding-top: 1rem;
+}
+
+.about-description {
   line-height: 1.4;
   padding-left: 0;
   padding-right: 25px;
@@ -151,8 +151,8 @@ section {
 
 .about img {
   display: flex;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border: 5px solid var(--cyan);
   border-radius: 25px;
   object-fit: cover;
@@ -165,17 +165,10 @@ section {
 .jobs {
   height: 100%;
   width: 65%;
-  padding: 100px 0 150px 0;
 }
 
 .jobs article {
   padding: 20px 0;
-}
-
-.jobs h2 {
-  text-align: left;
-  font-size: 30px;
-  line-height: 2.0;
 }
 
 .jobs h3 {
@@ -208,7 +201,6 @@ section {
 
 .feature {
   width: 60%;
-  padding: 100px 0 150px 0;
   text-align: center;
 }
 
@@ -228,7 +220,8 @@ section {
 }
 
 .img-fluid {
-  width: 100%;
+  width: 40rem;
+  height: 25rem;
 }
 
 .card-title {
@@ -248,7 +241,7 @@ section {
 
 .text-muted {
   padding: 15px 0;
-  font-size: 13px;
+  font-size: 15px;
   background-color: var(--darkblue);
 }
 
@@ -268,10 +261,6 @@ section {
 }
 
 /* Other Projects Section */
-
-.projects {
-  padding: 2rem 0;
-}
 
 .project-card {
   background-color: var(--blue);
@@ -303,7 +292,7 @@ section {
 }
 
 .text-sub {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /* Contact Section */
@@ -312,12 +301,6 @@ section {
   height: 20vh;
   margin: 0 auto;
   text-align: center;
-}
-
-.contacts h2 {
-  text-align: center;
-  font-size: 30px;
-  line-height: 2.0;
 }
 
 .contacts p {
@@ -420,10 +403,13 @@ footer h4:hover {
   transition: all var(--timing) ease-in;
 }
 
-
 /* Media Query for Larger Desktop Screen and Smaller */
 
-@media screen and (max-width: 1800px) {}
+@media screen and (max-width: 1800px) {
+  .about {
+    width: 70%;
+  }
+}
 
 /* Media Query for Desktops and Smaller */
 @media screen and (max-width: 1280px) {
