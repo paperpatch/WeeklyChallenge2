@@ -39,6 +39,16 @@ body {
   padding: 10px;
 }
 
+.navbar-brand:hover {
+  animation: 2s multicolor;
+  animation-fill-mode: forwards;
+}
+@keyframes multicolor {
+  0% { color: var(--white)}
+  50% { color: var(--cyan)}
+  100% { color: var(--darkcyan)}
+}
+
 .container-fluid {
   padding: 0px 3rem;
 }
