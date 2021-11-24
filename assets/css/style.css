@@ -53,6 +53,18 @@ body {
   color: var(--cyan);
 }
 
+.navbar-nav .btn  {
+  margin: 0 10px;
+  border: 2px solid var(--cyan);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navbar-nav .btn:hover {
+  border: 2px solid var(--darkcyan);
+  color: var(--darkcyan);
+}
+
 
 /* Intro Section */
 
@@ -309,15 +321,15 @@ section {
   line-height: 2.0;
 }
 
-.btn  {
+.contacts .btn  {
   margin-top: 3rem;
   border: 2px solid var(--cyan);
   padding: 15px;
   border-radius: 10px;
 }
 
-.btn:hover {
-  transform: scale(1.25);
+.contacts .btn:hover {
+  transform: scale(1.1);
 }
 
 /* Footer Section */
