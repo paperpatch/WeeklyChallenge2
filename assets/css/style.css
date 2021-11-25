@@ -37,16 +37,7 @@ body {
 .navbar-brand {
   font-size: 30px;
   padding: 10px;
-}
-
-.navbar-brand:hover {
-  animation: 2s multicolor;
-  animation-fill-mode: forwards;
-}
-@keyframes multicolor {
-  0% { color: var(--white)}
-  50% { color: var(--cyan)}
-  100% { color: var(--darkcyan)}
+  transition: all 0.5s ease-out;
 }
 
 .container-fluid {
@@ -59,11 +50,12 @@ body {
   transition: all 0.5s ease-out;
 }
 
-.nav-item.nav-link.active:hover {
+.nav-item.nav-link.active:hover,
+.navbar-brand:hover {
   color: var(--cyan);
 }
 
-.navbar-nav .btn  {
+.navbar-nav .btn {
   margin: 0 10px;
   border: 2px solid var(--cyan);
   padding: 10px;
@@ -81,7 +73,7 @@ body {
 .intro {
   height: 100vh;
   padding-top: 15%;
-  width: 50%;
+  width: 50vw;
   margin: 0 auto;
   line-height: 2;
 }
@@ -150,7 +142,7 @@ section {
 }
 
 .about {
-  width: 45%;
+  width: 45vw;
 }
 
 .title {
@@ -185,8 +177,8 @@ section {
 /* Work and Jobs Section */
 
 .jobs {
-  height: 100%;
-  width: 65%;
+  height: 100vh;
+  width: 65vw;
 }
 
 .jobs article {
@@ -222,7 +214,7 @@ section {
 /* Featured Projects Section */
 
 .feature {
-  width: 60%;
+  width: 60vw;
   text-align: center;
 }
 
@@ -331,7 +323,7 @@ section {
   line-height: 2.0;
 }
 
-.contacts .btn  {
+.contacts .btn {
   margin-top: 3rem;
   border: 2px solid var(--cyan);
   padding: 15px;
@@ -429,17 +421,20 @@ footer h4:hover {
 
 @media screen and (max-width: 1800px) {
   .about {
-    width: 70%;
+    width: 70vw;
   }
 }
 
 /* Media Query for Desktops and Smaller */
 @media screen and (max-width: 1280px) {
   .intro {
-    width: 60%;
+    width: 60vw;
   }
-  .about, .feature, .jobs {
-    width: 80%;
+
+  .about,
+  .feature,
+  .jobs {
+    width: 80vw;
   }
 }
 
@@ -449,8 +444,10 @@ footer h4:hover {
     margin: 0 20px;
   }
 
-  .intro, .about, .jobs {
-    width: 90%;
+  .intro,
+  .about,
+  .jobs {
+    width: 90vw;
   }
 }
 
@@ -465,10 +462,11 @@ footer h4:hover {
   }
 
   .intro {
-    padding-left: 5%;
+    padding-left: 5vw;
   }
 
-  .intro h1, p {
+  .intro h1,
+  p {
     font-size: 15px;
   }
 
@@ -488,7 +486,7 @@ footer h4:hover {
   .about,
   .jobs,
   .feature {
-    width: 90%;
+    width: 90vw;
     margin: 0 auto;
   }
 }
