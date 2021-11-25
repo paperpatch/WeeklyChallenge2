@@ -108,6 +108,10 @@ li {
   font-size: 19px;
 }
 
+hr {
+  margin: 0 auto;
+}
+
 /* Utilities */
 
 .intro a,
