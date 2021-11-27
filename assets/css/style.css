@@ -145,7 +145,6 @@ li {
 section {
   margin: 0 auto;
   transition: all 1s ease;
-  padding-bottom: 20vh;
 }
 
 .about {
@@ -184,7 +183,7 @@ section {
 /* Work and Jobs Section */
 
 .jobs {
-  height: 100vh;
+  height: 100%;
   width: 65%;
 }
 
@@ -319,7 +318,7 @@ section {
 /* Contact Section */
 
 .contacts {
-  height: 20vh;
+  padding: 10vh 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -345,7 +344,7 @@ section {
 
 footer {
   background: var(--darkblue);
-  padding: 2rem;
+  padding: 5rem 2rem 2rem 2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -369,7 +368,7 @@ footer h4:hover {
 
 .social-container {
   width: 100%;
-  margin: 10vh auto 0 auto;
+  margin: 10% auto 0 auto;
   text-align: center;
 }
 
