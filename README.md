@@ -1,6 +1,6 @@
 # Portfolio
 
-Patrick Chen's personal portfolio.
+Patrick Chen's [personal portfolio](https://patrickchen.dev/).
 
 ## TABLE OF CONTENTS
 
@@ -11,7 +11,7 @@ Patrick Chen's personal portfolio.
 ![Alt text](./assets/images/portfolio-screenshot.png "portfolio page screenshot") 
 
 ## DEPLOYMENT
-See my [portfolio!](https://paperpatch.github.io/personal_portfolio/)
+See my [portfolio!](https://patrickchen.dev/)
 
 Check the rest of my GitHub profile for more of my repositories!
 
