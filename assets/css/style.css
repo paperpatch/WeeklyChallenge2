@@ -305,7 +305,8 @@ section {
 }
 
 .project-card:hover .bi-folder,
-.project-card:hover .card-title {
+.project-card:hover .card-title,
+.project-card a:hover {
   color: var(--darkcyan);
   transition: all 0.5s ease-out;
 }
