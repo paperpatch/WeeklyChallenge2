@@ -70,6 +70,15 @@ body {
   color: var(--darkcyan);
 }
 
+/* Resume Modal Section */
+
+.modal h5 {
+  color: black;
+}
+
+.modal embed {
+  height: 100vh;
+}
 
 /* Intro Section */
 
