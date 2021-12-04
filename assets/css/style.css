@@ -154,6 +154,7 @@ li {
 section {
   margin: 0 auto;
   transition: all 1s ease;
+  padding-top: 5%;
 }
 
 .about {
@@ -328,7 +329,6 @@ section {
 /* Contact Section */
 
 .contacts {
-  padding: 10vh 0;
   margin: 0 auto;
   text-align: center;
 }
