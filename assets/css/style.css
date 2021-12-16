@@ -249,10 +249,9 @@ section {
   padding: 0.5rem;
 }
 
-.img-fluid {
-  width: 40rem;
-  height: 25rem;
-}
+/* .img-fluid {
+  height: 100%;
+} */
 
 .card-title {
   font-size: 25px;
@@ -280,7 +279,8 @@ section {
 }
 
 .feature img {
-  max-width: 45rem;
+  width: 100%;
+  height: auto;
   opacity: 60%;
   transition: all 0.5s ease-out;
 }
@@ -451,6 +451,18 @@ footer h4:hover {
   .feature,
   .jobs {
     width: 80%;
+  }
+
+  .feature img {
+    width: 100%;
+    height: auto;
+    opacity: 20%;
+    z-index: 1;
+  }
+  
+  .feature img:hover {
+    opacity: 50%;
+    transform: scale(1.03);
   }
 }
 
