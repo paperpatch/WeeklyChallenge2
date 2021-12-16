@@ -1,4 +1,4 @@
-// Navbar Scroll Section
+// Navbar Scroll Hide Section
 var prevScrollpos = window.scrollY;
 window.onscroll = function () {
   var currentScrollpos = window.scrollY;
@@ -10,21 +10,17 @@ window.onscroll = function () {
   prevScrollpos = currentScrollpos;
 }
 
-// Fade In/Out Elements Section
+// Fade In Elements Section
 
-$(window).on("load",function() {
-  $(window).scroll(function() {
-    let windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".fade-in").each(function() {
-      /* Check the location of each desired element */
-      let objectTop = $(this).offset().top //+ $(this).outerHeight();
-      
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectTop < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(150,1);}
-      } // else { //object goes out of view (scrolling up)
-        // if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-      // }
-    });
-  }).scroll(); //invoke scroll-handler on page-load
+$(window).scroll(function() {
+  $('.fade-in').each(function() {
+    let top_of_element = $(this).offset().top;
+    let bottom_of_element = $(this).offset().top + $(this).outerHeight();
+    let bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    let top_of_screen = $(window).scrollTop();
+
+    if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
+      $(this).addClass('is-visible');
+    }
+  });
 });
