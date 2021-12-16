@@ -124,6 +124,7 @@ li {
 .jobs a,
 .feature a,
 .contacts a,
+.side-email a,
 .btn {
   color: var(--cyan);
   text-decoration: none;
@@ -135,6 +136,7 @@ li {
 .feature a:hover,
 .project-card a:hover,
 .contacts a:hover,
+.side-email a:hover,
 .btn:hover {
   color: var(--darkcyan);
 }
@@ -397,6 +399,24 @@ footer h4:hover {
   color: var(--darkcyan);
 }
 
+.side-email {
+  position: fixed;
+  left: 85%;
+  bottom: 10%;
+  transform: rotate(90deg);
+}
+
+.side-email a{
+  color: var(--grey);
+  font-size: 1.2rem;
+}
+
+.line-1 {
+  width: 400px;
+  border-bottom: 1px solid white;
+  display: block;
+}
+
 /* Social Media Icons */
 
 .social-container {
@@ -462,6 +482,9 @@ footer h4:hover {
   .about {
     width: 70%;
   }
+  .side-email {
+    left: 80%;
+  }
 }
 
 /* Media Query for Desktops and Smaller */
@@ -481,6 +504,10 @@ footer h4:hover {
     height: auto;
     opacity: 20%;
   }
+
+  .side-email {
+    left: 78%;
+  }
 }
 
 /* Media Query for Tablets Ipads Portrait Mode and Smaller */
@@ -493,6 +520,13 @@ footer h4:hover {
   .about,
   .jobs {
     width: 90%;
+  }
+}
+
+/* Specially made this for side links */
+@media screen and (max-width: 991px) {
+  .side-email {
+    left: 75%;
   }
 }
 
@@ -533,5 +567,9 @@ footer h4:hover {
   .feature {
     width: 90%;
     margin: 0 auto;
+  }
+
+  .side-email {
+    display: none;
   }
 }
