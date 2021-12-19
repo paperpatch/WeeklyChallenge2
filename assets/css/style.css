@@ -210,7 +210,7 @@ section {
   border: 5px solid var(--cyan);
   border-radius: 25px;
   object-fit: cover;
-  object-position: 10% 60%;
+  object-position: 50% 50%;
   padding: 0px;
   opacity: 50%;
   background-color: var(--blue);
@@ -224,6 +224,7 @@ section {
 .code-icon {
   width: auto;
   height: 60px;
+  margin: 0.5rem;
 }
 
 /* Work and Jobs Section */
