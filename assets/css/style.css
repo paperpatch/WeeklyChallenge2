@@ -416,7 +416,7 @@ footer h4:hover {
   transform: rotate(90deg);
 }
 
-.side-email a{
+.side-email a {
   color: var(--grey);
   font-size: 1.2rem;
 }
@@ -566,6 +566,19 @@ footer h4:hover {
   .intro h3,
   .title {
     font-size: 25px;
+    color: white;
+  }
+
+  li,
+  .range,
+  .jobs li,
+  .contacts p,
+  footer h4,
+  .side-email a,
+  small,
+  p,
+  ul {
+    color: white;
   }
 
   .arrow {
