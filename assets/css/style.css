@@ -203,7 +203,7 @@ section {
   padding-right: 25px;
 }
 
-.about img {
+.profile-pic {
   display: flex;
   width: 350px;
   height: 350px;
@@ -219,6 +219,11 @@ section {
 
 .about img:hover {
   opacity: 100%;
+}
+
+.code-icon {
+  width: auto;
+  height: 60px;
 }
 
 /* Work and Jobs Section */
