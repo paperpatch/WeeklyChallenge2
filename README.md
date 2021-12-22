@@ -8,7 +8,7 @@ Patrick Chen's [personal portfolio](https://patrickchen.dev/).
 * [Deployment](#deployment)
 * [Contribution](#contribution)
 
-![Alt text](./assets/images/portfolio-screenshot.png "portfolio page screenshot") 
+![Alt text](./assets/images/screenshots/portfolio-screenshot-2.png "portfolio page screenshot") 
 
 ## DEPLOYMENT
 See my [portfolio!](https://patrickchen.dev/)
