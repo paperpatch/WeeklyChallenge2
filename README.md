@@ -1,6 +1,9 @@
 # Portfolio
 
-Patrick Chen's [personal portfolio](https://patrickchen.dev/).
+Patrick Chen's [personal portfolio](https://paperpatch.github.io/personal_portfolio/).
+
+See my new [react personal portfolio](https://patrickchen.dev/).
+New Github repository can be found [here](https://github.com/paperpatch/react_portfolio).
 
 ## TABLE OF CONTENTS
 
@@ -11,7 +14,9 @@ Patrick Chen's [personal portfolio](https://patrickchen.dev/).
 ![Alt text](./assets/images/screenshots/portfolio-screenshot-2.png "portfolio page screenshot") 
 
 ## DEPLOYMENT
-See my [portfolio!](https://patrickchen.dev/)
+See my [portfolio!](https://paperpatch.github.io/personal_portfolio/)
+
+See my [new react portfolio!](https://patrickchen.dev/).
 
 Check the rest of my GitHub profile for more of my repositories!
 
